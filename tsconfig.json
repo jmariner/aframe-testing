@@ -1,0 +1,28 @@
+{
+	"exclude": [
+		"scratch",
+		"node_modules"
+	],
+	"compilerOptions": {
+		"sourceMap": true,
+		"noImplicitAny": true,
+		"module": "esnext",
+		"target": "es6",
+		"moduleResolution": "node",
+		"jsx": "react",
+		"baseUrl": ".",
+		"rootDir": "src",
+		"removeComments": false,
+		"allowSyntheticDefaultImports": false,
+		"lib": [
+			"es2017",
+			"dom"
+		],
+		"paths": {
+			"/*": [
+				"/src/*"
+			]
+		},
+		"plugins": []
+	}
+}
