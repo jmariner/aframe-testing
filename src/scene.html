@@ -1,19 +1,28 @@
-<a-scene id="SCENE"
+<a-scene id="SCENE" inspector
 	environment="active: true; preset: forest; lighting: distant; dressingAmount: 1000; skyType: atmosphere; shadow: true; shadowSize: 10; flatShading: false; lightPosition: 0 2.06 0; grid: none; ground: hills; groundYScale: 10"
 	fog="density: 0; far: 84" toggle-stats="startState: false">
 	<require path="assets.html"></require>
 	<a-sky src="#skybox"></a-sky>
-	<a-entity id="camera-rig" rotation="0 -50.44893386126898 0" position="2.02823 0 7.43154">
+	<a-entity id="camera-rig" rotation="0 -33.27108620545177 0" position="2.02823 0 7.43154">
 		<a-entity id="camera" position="0 1.6 0" camera look-controls wasd-controls="fly: true"></a-entity>
 	</a-entity>
+	<a-entity id="text1" rotation="0 -72.83210308584972 0" text="align: center; value: GLTF\nModel" scale="10 10 10"
+		position="6.23835 0.435 6.65896"></a-entity>
+	<a-entity id="text2" rotation="0 -33.32437128039894 0" position="5.04399 3.07574 4.07185"
+		text="align: center; value: OBJ+MTL\nModel" scale="10 10 10"></a-entity>
+	<a-entity id="text3" rotation="0 -0.8009949975928908 0" position="1.67083 1.54844 3.79327"
+		text="align: center; value: Primitive\nModel" scale="10 10 10"></a-entity>
 	<a-entity id="items" position="1.77447 0 6.42684">
-		<a-entity id="prim1" geometry="primitive: cylinder" material="color:red" position="-0.19589 2.3566 -3.59404"
+		<a-entity id="prim1" geometry="primitive: cylinder" material="color: #804040" position="-0.19589 2.3566 -3.59404"
 			rotation="0 0 0" scale="0.75 5.07548 0.75" shadow></a-entity>
-		<a-entity id="gltf1" rotation="0 -75 0" gltf-model="#duck" position="3.847 -0.09834 -0.42485"
-			scale=".75 .75 .75" shadow></a-entity>
+		<a-entity id="gltf1" rotation="0 -75 0" gltf-model="#duck" position="5.20505 -0.09834 0.06879"
+			scale=".75 .75 .75" shadow
+			animation__spin="dur: 10000; easing: linear; from: 0; loop: -1; property: object3D.rotation.y; to: 360">
+		</a-entity>
 		<a-entity id="obj1" rotation="0 -30.393119200509652 0" obj-model="obj: #barn-obj; mtl: #barn-mat"
 			position="5.22059 -0.04109 -6.25845" scale="0.005 0.005 0.005" shadow></a-entity>
 		<!-- <a-entity id="fbx1" position="0 0 -3" fbx-model="#vr-fbx" shadow></a-entity> -->
 	</a-entity>
-	<a-entity id="light1" position="3.67476 1.18299 5.20118" light="distance: 30; type: point; castShadow: true; intensity: 1.5"></a-entity>
+	<a-entity id="light1" position="3.67476 1.18299 5.20118"
+		light="distance: 30; type: point; castShadow: true; intensity: 1.5"></a-entity>
 </a-scene>
