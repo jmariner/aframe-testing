@@ -9,7 +9,7 @@ const commonConfig = require("./common.webpack");
 const aframeWatcher = require("./aframe-watcher");
 
 const devStats = {
-	excludeAssets: [common.imageFileRegex, /\.(gltf|obj|mtl)$/]
+	excludeAssets: [common.imageFileRegex, /\.(gltf|obj|mtl|fbx)$/]
 };
 
 const config = (env = {}) => ({
