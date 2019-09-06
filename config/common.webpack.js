@@ -13,7 +13,7 @@ module.exports = (env = {}) => ({
 	},
 	output: {
 		path: common.resolve("dist"),
-		publicPath: "/",
+		publicPath: "",
 		filename: "[name].[hash].js",
 		// chunkFilename: "[name].[hash].chunk.js",
 		crossOriginLoading: "anonymous"

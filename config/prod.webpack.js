@@ -57,7 +57,7 @@ const config = (env = {}) => ({
 		// 	minRatio: 0.8
 		// }),
 		new CleanWebpackPlugin({
-			cleanOnceBeforeBuildPatterns: ["!.gitignore"],
+			cleanOnceBeforeBuildPatterns: ["*", "!.gitignore"],
 			verbose: false
 		}),
 		// new MiniCssExtractPlugin({
