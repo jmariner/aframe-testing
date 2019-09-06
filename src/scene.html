@@ -1,5 +1,8 @@
-<a-scene vr-mode-ui="false" stats="false">
+<a-scene vr-mode-ui="false" stats="true">
 	<require path="assets.html"></require>
 	<a-sky src="#skybox"></a-sky>
-	<a-box id="box1" color="red" position="0 5 -5" rotation="-12 -80 -24" scale="2 2 2"></a-box>
+	<a-box id="box1" color="red" position="-2 1.48947 -3" rotation="0 0 0" scale="1 1 1"></a-box>
+	<a-entity id="gltf1" rotation="0 -75 0" gltf-model="#duck" position="0 0.83577 -3" scale=".75 .75 .75"></a-entity>
+	<a-entity id="obj1" obj-model="obj: #barn-obj; mtl: #barn-mat" position="2 1 -3" scale=".001 .001 .001"></a-entity>
+	<!-- <a-entity id="fbx1" position="0 0 -3" fbx-model="#vr-fbx"></a-entity> -->
 </a-scene>
