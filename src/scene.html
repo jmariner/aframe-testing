@@ -1,6 +1,7 @@
-<a-scene vr-mode-ui="false" stats="true">
+<a-scene id="SCENE" toggle-stats="startState: true" toggle-stats>
 	<require path="assets.html"></require>
 	<a-sky src="#skybox"></a-sky>
+	<a-entity id="camera" position="0 1.6 0" camera look-controls wasd-controls="fly: true"></a-entity>
 	<a-box id="box1" color="red" position="-2 1.48947 -3" rotation="0 0 0" scale="1 1 1"></a-box>
 	<a-entity id="gltf1" rotation="0 -75 0" gltf-model="#duck" position="0 0.83577 -3" scale=".75 .75 .75"></a-entity>
 	<a-entity id="obj1" obj-model="obj: #barn-obj; mtl: #barn-mat" position="2 1 -3" scale=".001 .001 .001"></a-entity>
